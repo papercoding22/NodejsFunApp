@@ -1,3 +1,3 @@
-import searchRoutes from "./search/routes";
+import handleSearchRouter from "./search/routes";
 
-export default [...searchRoutes];
+export default [handleSearchRouter];
