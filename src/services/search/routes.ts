@@ -3,8 +3,8 @@ import { getPlacesByName } from "./SearchController";
 
 export default [
   {
-    path: "/api/v1/search",
-    method: "get",
+    path: '/api/v1/search',
+    method: 'get',
     handler: [
       async ({ query }: Request, res: Response) => {
         const result = await getPlacesByName(query.q as string);
@@ -13,3 +13,4 @@ export default [
     ],
   },
 ];
+
